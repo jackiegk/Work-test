@@ -37,7 +37,7 @@ def main():
         payload = {'text': "SSR服务器故障", 'desp': "\n* 服务器时间" + time1 + "\n" + total_message}
         requests.get('http://sc.ftqq.com/[此处填自己的Key].send', params=payload)
     else:
-        print("服务器正常，不需要发消息")
+        print("服务器正常，不需要发消息！！！")
 
 if __name__ == "__main__":
     main()

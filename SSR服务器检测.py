@@ -5,11 +5,13 @@ import urllib.request
 import requests
 import time
 def main():
+    ## 补全ssrstatus的json地址
+    url = ''
+
     ## 获得当前时间
     time1=time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
     print(time1)
-    ## 补全ssrstatus的json地址
-    url = ''
+
     total_message = ""
     req = urllib.request.Request(url)
     response = urllib.request.urlopen(req)
